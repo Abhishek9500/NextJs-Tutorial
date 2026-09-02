@@ -18,6 +18,7 @@ export default function RootLayout({children}:{children:ReactNode}){
             <Link href="/about" style={{textDecoration:'none',color:'white'}}>About</Link>
             <Link href="/contact" style={{textDecoration:'none',color:'white'}}>Contact</Link>
             <Link href="/dashboard" style={{textDecoration:'none',color:'white'}}>Dashboard</Link>
+            <Link href="/blog" style={{textDecoration:'none',color:'white'}}>Blog</Link>
           </nav>
         </div>
       </header>
