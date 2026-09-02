@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import './globals.css'
 
 export default function RootLayout({children}:{children:ReactNode}){
   return(
@@ -13,7 +14,7 @@ export default function RootLayout({children}:{children:ReactNode}){
           <h1>
             <a href="/" style={{textDecoration:'none',color:'white'}}>Navbar</a>
           </h1>
-          <nav style={{display:'flex',gap:'20px'}}>
+          <nav style={{display:'flex',gap:'20px', paddingTop:'30px'}}>
             <Link href="/" style={{textDecoration:'none',color:'white'}}>Home</Link>
             <Link href="/about" style={{textDecoration:'none',color:'white'}}>About</Link>
             <Link href="/contact" style={{textDecoration:'none',color:'white'}}>Contact</Link>

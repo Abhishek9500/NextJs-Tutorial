@@ -1,0 +1,13 @@
+.card{
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.title{
+    color: violet;
+}
+
+.description{
+    color: blueviolet;
+}
