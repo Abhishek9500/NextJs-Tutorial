@@ -1,8 +1,17 @@
+import Image from "next/image"
+
 export default function Home(){
     return(
-        <div>
-            <h1>Home Page</h1>
-            <p>Welcome to Home page !</p>
-        </div>
+        <main style={{padding:'40px'}}>
+            <p>This is main components</p>
+
+            <Image
+                src='/spider.jpg'
+                // src="https://unsplash.com/photos/a-spider-man-in-a-suit-with-glowing-eyes-V0zU9A_Zq9A"
+                alt="hero image"
+                width={300}
+                height={450}
+            />
+        </main>
     )
 }

@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import './globals.css'
+import {Inter} from "next/font/google"
+
+const inter = Inter({
+  subsets:["latin"],
+  weight:["400","700"],
+  display:"swap"
+})
 
 export default function RootLayout({children}:{children:ReactNode}){
   return(
@@ -8,7 +15,7 @@ export default function RootLayout({children}:{children:ReactNode}){
     <head>
       <title>Abhishek Next.Js Course</title>
     </head>
-    <body>
+    <body className={inter.className}>
       <header style={{backgroundColor:'gray'}}>
         <div style={{display:"flex",justifyContent:"space-between"}}>
           <h1>
