@@ -1,0 +1,22 @@
+export default async function Posts(){
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+    const posts = await res.json();
+
+    // throw new Error('failed to fetch posts');
+
+    return(
+        <div>
+            <h1>All Posts</h1>
+            <ul>
+                {
+                    posts.map((post:any) =>(
+                        <li key={post.id}>
+                            {post.title}
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    )
+}
