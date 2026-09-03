@@ -1,16 +1,26 @@
-import { ReactNode } from "react";
+import { Metadata } from "next";
 
-export default function RootLayout({children}:{children:ReactNode}){
+export const metadata:Metadata = {
+  title:{
+    default:"Abhishek Decodes",
+    template:"%s | Abhishek Decodes"
+  },
+  description:"learn web  Development,programming, and tech with Abhishek Decodes",
+  openGraph:{
+    siteName:"Abhishek Decodes",
+  }
+}
+
+export default function RootLayout({
+  children,
+}:{
+  children:React.ReactNode
+}){
   return(
     <html lang="en">
-    <head>
-      <title>Abhishek Next.Js Course</title>
-    </head>
-    <body>
-      <header>Navbar</header>
-      {children}
-      <footer>Footer</footer>
-    </body>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }
