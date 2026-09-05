@@ -1,4 +1,3 @@
-import { getPostponedFromState } from 'next/dist/server/app-render/postponed-state';
 import {getPostBySlug} from '../../lib/posts';
 
 import type { Metadata } from 'next';

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getPosts } from "../lib/posts";
 
 export default function BlogPage(){
-    const posts = getPosts();
+    const posts = getPosts();  // Here fetching data from database
     console.log(posts);
     // posts.map(post=>(console.log(post.slug)));
     return (
